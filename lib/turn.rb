@@ -29,7 +29,7 @@ def turn(board)
   user_input = gets.strip
   if valid_move?(board, input_to_index(user_input)) == true
     move(board, input_to_index, character = "X")
-  elsif (board, input_to_index(user_input)) == false
+  elsif valid_move?(board, input_to_index(user_input)) == false
     puts "Invalid move."
     turn(board)
   end
