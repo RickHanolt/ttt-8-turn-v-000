@@ -10,10 +10,6 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def position_taken?
-
-end
-
 def valid_move?(board, index)
   if (board[index] == "" || board[index] == " " || board[index] == "  " || board[index] == "   " || board[index] == nil) && index.between?(0,8)
     true
@@ -22,4 +18,8 @@ def valid_move?(board, index)
   else
     false
   end
+end
+
+def move 
+
 end
