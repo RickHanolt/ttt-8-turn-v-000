@@ -32,7 +32,7 @@ def turn(board)
     move(board, input, character = "X")
     display_board
   else
-    puts "Invalid move."
-    turn(board)
+    puts "Invalid move. Please enter 1-9:"
+    user_input = gets.strip
   end
 end
