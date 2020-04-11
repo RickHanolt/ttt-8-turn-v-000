@@ -10,9 +10,9 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
-def valid_move?(board, input_to_index)
-  if board[input_to_index] == "" || board[input_to_index] == " " || board[input_to_index] == nil
+def valid_move?(board, input_to_index(user_input))
+  if board[input_to_index(user_input)] == "" || board[input_to_index(user_input)] == " " || board[input_to_index(user_input)] == nil
     true
-  elsif board[input_to_index] == "X" || board[input_to_index] == "O"
+  elsif board[input_to_index(user_input)] == "X" || board[input_to_index(user_input)] == "O"
   end
 end
