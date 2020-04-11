@@ -30,7 +30,7 @@ def turn(board)
   if valid_move?(board, input_to_index(user_input))
     move(board, input, character = "X")
     display_board
-  elsif valid_move? == false
+  else
     puts "Invalid move."
     turn(board)
   end
