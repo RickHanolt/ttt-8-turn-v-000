@@ -23,15 +23,3 @@ end
 def move(board, input_to_index, character = "X")
   board[input_to_index] = character
 end
-
-def turn(board)
-  puts "Please enter 1-9:"
-  user_input = gets.strip
-  if valid_move?(board, input_to_index(user_input))
-    move(board, input, character = "X")
-    display_board
-  else
-    puts "Invalid move."
-    turn(board)
-  end
-end
